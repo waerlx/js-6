@@ -88,7 +88,9 @@
 // }else{
 //     console.log('white hope that thsi page looks ok!')
 // }
-const number = +prompt('Введите число между 0 и 3', '');
+let number = document.querySelector('.number')
+let number = document.querySelector('.text')
+console.log(number.value)
 switch (number) {
     case 0:
         alert('Вы ввели число 0');

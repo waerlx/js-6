@@ -89,18 +89,22 @@
 //     console.log('white hope that thsi page looks ok!')
 // }
 let number = document.querySelector('.number')
-let number = document.querySelector('.text')
-console.log(number.value)
-switch (number) {
-    case 0:
-        alert('Вы ввели число 0');
-        break;
-    case 1:
-        alert('Вы ввели число 1');
-        break;
-    case 2:
-        alert('Вы ввели число 2, а может и 3');
-        break;
-    default:
-        alert('We hope that this page looks ok!');
-}
+let text = document.querySelector('.text')
+number.addEventListener('input', function(){
+    switch (number.value) {
+        case 0:
+          text.innerText = "Вы ввели число 0"
+          break
+        case 1:
+            text.innerText = "Вы ввели число 1"
+          break
+        case 2:
+        case 3:
+            text.innerText = "Вы ввели число 2.3"
+          break
+        default:
+            text.innerText = "covsem drufoe cto to"
+          break
+      }
+})
+
